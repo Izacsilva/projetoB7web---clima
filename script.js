@@ -22,3 +22,16 @@ function getClima(cidade) {
 
     nomeCidade.innerHTML = `${cidade}`
 }
+
+function exibeMensagem(msg) {
+    const avisos = document.querySelector('.aviso')
+
+    avisos.innerHTML = `${msg}`
+}
+
+function verificaCampo(campo) {
+
+    if(campo != " ") {
+        exibeMensagem("Carregando...")
+    }
+}
